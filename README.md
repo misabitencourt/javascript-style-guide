@@ -164,7 +164,7 @@
     itemsCopy = items.slice();
     ```
     
-    - Você também pode utilizar angular#copy. [jsPerf](https://docs.angularjs.org/api/ng/function/angular.copy)
+    - Você também pode utilizar angular#copy. [angularDocs](https://docs.angularjs.org/api/ng/function/angular.copy)
 
     ```javascript
     var len = items.length;
