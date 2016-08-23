@@ -26,7 +26,6 @@
   1. [Métodos Acessores](#accessors)
   1. [Construtores](#constructors)
   1. [Eventos](#events)
-  1. [jQuery](#jquery)
   1. [Compatibilidade ECMAScript 5](#ecmascript-5-compatibility)
   1. [Testes](#testing)
   1. [Performance](#performance)
@@ -1353,68 +1352,6 @@
     ```
 
 **[⬆ voltar ao topo](#table-of-contents)**
-
-## <a name='jquery'>jQuery</a>
-
-  - Nomeie objetos jQuery com o prefixo `$`.
-
-    ```javascript
-    // ruim
-    var sidebar = $('.sidebar');
-
-    // bom
-    var $sidebar = $('.sidebar');
-    ```
-
-  - Guarde as consultas jQuery para reuso.
-
-    ```javascript
-    // ruim
-    function setSidebar() {
-      $('.sidebar').hide();
-
-      // ...outras implementações...
-
-      $('.sidebar').css({
-        'background-color': 'pink'
-      });
-    }
-
-    // bom
-    function setSidebar() {
-      var $sidebar = $('.sidebar');
-      $sidebar.hide();
-
-      // ...outras implementações...
-
-      $sidebar.css({
-        'background-color': 'pink'
-      });
-    }
-    ```
-
-  - Para pesquisas no DOM use o modo Cascata `$('.sidebar ul')` ou pai > filho `$('.sidebar > ul')`. [jsPerf](http://jsperf.com/jquery-find-vs-context-sel/16)
-  - Use `find` em objetos jQuery que estão armazenados em variáveis.
-
-    ```javascript
-    // ruim
-    $('ul', '.sidebar').hide();
-
-    // ruim
-    $('.sidebar').find('ul').hide();
-
-    // bom
-    $('.sidebar ul').hide();
-
-    // bom
-    $('.sidebar > ul').hide();
-
-    // bom
-    $sidebar.find('ul').hide();
-    ```
-
-**[⬆ voltar ao topo](#table-of-contents)**
-
 
 ## <a name='ecmascript-5-compatibility'>Compatibilidade ECMAScript 5</a>
 
