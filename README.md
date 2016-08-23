@@ -647,38 +647,6 @@
 
 ## <a name='comments'>Comentários</a>
 
-  - Use `/** ... */` para comentários com mais de uma linha. Inclua uma descrição e especifique tipos e valores para todos os parametros e retornos.
-
-    ```javascript
-    // ruim
-    // make() returns a new element
-    // based on the passed in tag name
-    //
-    // @param <String> tag
-    // @return <Element> element
-    function make(tag) {
-
-      // ...outra implementação...
-
-      return element;
-    }
-
-    // bom
-    /**
-     * make() returns a new element
-     * based on the passed in tag name
-     *
-     * @param <String> tag
-     * @return <Element> element
-     */
-    function make(tag) {
-
-      // ...outras implementações...
-
-      return element;
-    }
-    ```
-
   - Use `//` para comentários de uma linha. Coloque comentários de uma linha acima da expressão. Deixe uma linha em branco antes de cada comentário.
 
     ```javascript
