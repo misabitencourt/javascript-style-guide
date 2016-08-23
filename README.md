@@ -28,8 +28,6 @@
   1. [Eventos](#events)
   1. [Compatibilidade ECMAScript 5](#ecmascript-5-compatibility)
   1. [Testes](#testing)
-  1. [Performance](#performance)
-  1. [Recursos](#resources)
   1. [Licença](#license)
 
 ## <a name='types'>Tipos</a>
