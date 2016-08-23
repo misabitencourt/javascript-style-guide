@@ -30,11 +30,6 @@
   1. [Testes](#testing)
   1. [Performance](#performance)
   1. [Recursos](#resources)
-  1. [Empresas utilizando](#in-the-wild)
-  1. [Traduções](#translation)
-  1. [The JavaScript Style Guide Guide](#the-javascript-style-guide-guide)
-  1. [Converse conosco sobre Javascript](#chat-with-us-about-javascript)
-  1. [Contribuidores](#contributors)
   1. [Licença](#license)
 
 ## <a name='types'>Tipos</a>
