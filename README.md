@@ -571,7 +571,6 @@
 
 ## <a name='comparison-operators--equality'>Expressões Condicionais & Comparações</a>
 
-  - Use `===` e `!==` ao invés de `==` e `!=`.
   - Expressões condicionais são interpretadas usando coerção de tipos e seguem as seguintes regras:
 
     + **Objeto** equivale a **true**
