@@ -1164,23 +1164,6 @@
       };
     }
     ```
-
-  - Nomeie suas funções. Ajuda bastante quando for analisar pilhas de erro.
-
-    ```javascript
-    // ruim
-    var log = function(msg) {
-      console.log(msg);
-    };
-
-    // bom
-    var log = function log(msg) {
-      console.log(msg);
-    };
-    ```
-
-  - **Nota:** IE8 ou inferior mostra alguns problemas com funções nomeadas. Veja [http://kangax.github.io/nfe/](http://kangax.github.io/nfe/) para mais informações.
-
   - Se seu arquivos exporta apenas uma classes, o nome do arquivo deve conter exatamento o nome da classe.
     ```javascript
     // conteúdo do arquivo
