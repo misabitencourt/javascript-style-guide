@@ -163,6 +163,23 @@
     // bom
     itemsCopy = items.slice();
     ```
+    
+    - Você também pode utilizar angular#copy. [jsPerf](https://docs.angularjs.org/api/ng/function/angular.copy)
+
+    ```javascript
+    var len = items.length;
+    var itemsCopy = [];
+    var i;
+
+    // ruim
+    for (i = 0; i < len; i++) {
+      itemsCopy[i] = items[i];
+    }
+
+    // bom
+    itemsCopy = angular.copy(items);
+    // Ou simplismente angular.copy(items, itemsCopy);
+    ```
 
   - Para converter um objeto similar a um array para array, utilize Array#slice.
 
